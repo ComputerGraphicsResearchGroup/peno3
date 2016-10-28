@@ -1,0 +1,112 @@
+\documentclass[11pt,a4paper]{article}
+
+\title{Linux Cheat Sheet}
+\author{}
+\date{}
+
+\usepackage{booktabs}
+\usepackage{courier}
+\usepackage{tgpagella}
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{caption}
+
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+\begin{document}
+
+\begin{center}
+	\begin{huge}
+		\textbf{Linux Cheat Sheet}\\[1cm]
+	\end{huge}
+\end{center}
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{p{4.4cm}p{10.3cm}}
+		\toprule[1pt]
+		\texttt{cd} & change current directory to home directory.\\
+		\texttt{cd \emph{dir}} & change current directory to \emph{dir}.\\
+		\texttt{cd ..} & change the current directory to parent of the current directory.\\
+		\texttt{pwd} & prints the path of the current directory.\\
+		\midrule
+		\texttt{ls} & list all the files in the current directory.\\
+		\texttt{ls \emph{dir}} & list all the files in directory \emph{dir}.\\
+		\texttt{ls -l} & list all files in the current directory with more file details.\\
+		\midrule
+		\texttt{touch \emph{filename}} & make a new file with the given \emph{filename}.\\
+		\texttt{mkdir \emph{dir}} & make a new directory with name \emph{dir}.\\
+		\texttt{rm \emph{filename}} & delete the file with the given \emph{filename}.\\
+		\texttt{rm -r \emph{dir}} & delete the given directory and it's contents \emph{dir}.\\
+		\texttt{cp \emph{fname1} \emph{fname2}} & copies file \emph{fname1} to file \emph{fname2}.\\
+		\texttt{mv \emph{fname1} \emph{fname2}} & renames file \emph{fname1} to file \emph{fname2}.\\
+		\midrule
+		\texttt{man \emph{command}} & shows the manual on how to use \emph{command}.\\
+		\texttt{info \emph{command}} & shows info about the \emph{command}.\\
+		\texttt{apropos \emph{keyword}} & searches in the manuals for the given \emph{keyword}.\\
+		\midrule
+		\texttt{cat \emph{filename}} & concatenates the full file \emph{filename} on the terminal.\\
+		\texttt{less \emph{filename}} & show \emph{filename} in a viewer in the terminal.\\
+		\texttt{head \emph{filename}} & shows the first 10 lines of the file \emph{filename}.\\
+		\texttt{tail \emph{filename}} & shows the last 10 lines of the file \emph{filename}.\\
+		\midrule
+		\texttt{find -name \emph{filename}} & recursively finds all files which match the given \emph{filename}.\\
+		\midrule
+		\texttt{exit} & closes the current (tab) in the terminal.\\
+		\texttt{shutdown now} & shuts down the computer.\\
+		\bottomrule[1pt]
+	\end{tabular}
+	\caption{Usefull Linux commands.}
+\end{table}
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{p{4.4cm}p{10.3cm}}
+		\toprule[1pt]
+		\texttt{nano} & text editor which works in the terminal.\\
+		\texttt{nano \emph{filename}} & starts nano to edit the file \emph{filename}.\\
+		\midrule
+		\texttt{python} & starts interactive python console on the terminal.\\
+		\texttt{python \emph{filename}} & uses python to execute file \emph{filename}.\\
+		\texttt{python3} & starts interactive python console on the terminal.\\
+		\texttt{python3 \emph{filename}} & uses python to execute file \emph{filename}.\\
+		\midrule
+		\texttt{gimp} & image manipulation and paint program.\\
+		\texttt{gedit} & text editor with a graphical userinterface.\\
+		\texttt{eclipse} & programming IDE for Java. Additional support for other programming languages such as Python and C++ can be added by using plugins.\\
+		\texttt{libreoffice} & office suite to create documents, presentations,...\\
+		\midrule
+		\texttt{ssh \emph{user}@\emph{machine}} & remotely login to a terminal as the given \emph{user} on the given \emph{machine}.\\
+		\texttt{sftp \emph{user}@\emph{machine}} & utility to \emph{put} and \emph{get} files on the given \emph{user}'s account on the given \emph{machine}.\\
+		\bottomrule[1pt]
+	\end{tabular}
+	\caption{Usefull Linux programs.}
+\end{table}
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{p{5cm}p{10cm}}
+		\toprule[1pt]
+		\textbf{On the desktop} & \\
+		\midrule
+		\texttt{windows key} (press) & open launcher.\\
+		\texttt{windows key} (hold) & show desktop shortcuts.\\
+		\texttt{ctrl + alt + T } & start a new terminal.\\
+		\texttt{alt + shift} & switch between programs.\\
+		\midrule
+		\textbf{In a terminal} & \\
+		\midrule
+		\texttt{tab} & autocomplete current command.\\
+		\texttt{ctrl + shift + T} & start a new tab in the terminal.\\
+		\texttt{ctrl + C} & stop the current command\\
+		\texttt{ctrl + L} & clear the current terminal window.\\
+		\texttt{arrow up} & go back through your history of commands.\\
+		\texttt{middle-mouse button} & paste clipboard content.\\
+		\bottomrule[1pt]
+	\end{tabular}
+	\caption{Usefull shortcuts.}
+\end{table}
+
+\end{document}
