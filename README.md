@@ -6,4 +6,4 @@ Course Problem Solving and Design 3 ([B-KUL-H01D4B](https://onderwijsaanbod.kule
 * [Python](https://github.com/ComputerGraphicsResearchGroup/peno3/blob/gh-pages/tools/Python.md)
 
 ## Remarks
-* [Session 1](https://github.com/ComputerGraphicsResearchGroup/peno3/blob/gh-pages/2016-2017/week1/assignment/Remarks.md)
+* [Session 1](https://github.com/ComputerGraphicsResearchGroup/peno3/blob/gh-pages/2016-2017/assignment1/Remarks.md)
