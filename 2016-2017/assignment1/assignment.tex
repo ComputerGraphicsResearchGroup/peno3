@@ -1,0 +1,62 @@
+\documentclass[10pt,a4paper]{article}
+
+% package declarations
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{parskip}
+\usepackage{tgpagella}
+\usepackage[dutch]{babel}
+
+% document metadata
+\title{Probleemoplossen en Ontwerpen 3: Computerwetenschappen}
+\author{Philip Dutr\'e \and Karl Meerbergen}
+\date{3 oktober 2016}
+
+\begin{document}
+
+% custom title (in order to fit everything on one page)
+\begin{flushright}
+	Computerwetenschappen 2016\textemdash 2017\\[1cm]
+\end{flushright}
+\begin{center}%
+	\begin{huge}
+		\textbf{Probleemoplossen en Ontwerpen 3:}
+	\end{huge}\\[0.25cm]
+	\begin{huge}
+		\textbf{\textemdash Opgave 1\textemdash}
+	\end{huge}\\[0.75cm]
+	\begin{large}
+	Philip Dutr\'e\hspace{1cm}Karl Meerbergen
+	\end{large}\\[0.75cm]
+\end{center}
+
+De sectie \emph{opdracht}, zoals hieronder weergegeven, is wat we van jou verwachten. Het lijst een aantal experimenten en programmeeroefeningen op die je zelf, \emph{individueel}, moet uitvoeren.
+
+Het gedeelte \emph{onderzoeksvragen} zet je op weg om zelf de informatie op te zoeken (bibliotheek, online, ...) die je nodig zal hebben voor het uitwerken van de opdracht en geeft tevens belangrijke hints over hoe je je bevindingen kan structureren en voorstellen.
+
+\section*{Opdracht:}
+
+\begin{enumerate}
+	\item Implementeer een Monte Carlo integratieroutine, die het volume schat van een $n$-dimensionale bol, gebruik makende van hit-or-mis bemonstering.
+	\item Implementeer een Monte Carlo integratieroutine, die de oppervlakte schat van een tweedimensionale veelhoek met $n$ hoekpunten gelegen in het eenheidsvierkant, gebruik makende van hit-or-mis bemonstering.
+	\item Rapporteer over de convergentiesnelheid (in functie van het aantal monsters, rekentijd, ...)
+\end{enumerate}
+
+\section*{Onderzoeksvragen:}
+
+\begin{enumerate}
+	\item Wat is de gesloten analytische formule voor het volume van een $n$-dimensionale bol?
+	\item Wat is de gesloten formule voor het oppervlak van een veelhoek in twee dimensies?
+	\item Hoe zou je testen of een punt binnen een veelhoek ligt? (tip: zoek op \emph{point in polygon test})
+	\item Hoe zou je een willekeurige veelhoek genereren met $n$ hoekpunten in het eenheidsvierkant, zonder dat de zijden van de veelhoek elkaar snijden?
+	\item Wat is --- voor zowel het volume van een $n$-dimensionale bol als een tweedimensionale veelhoek --- het verloop van de fout in functie van het aantal monsters en/of rekentijd?
+	\item Hoe kunnen deze foutencurves het beste worden weergegeven?
+	\item Van welke andere parameters kan deze convergentiesnelheid afhangen? Dimensie $n$ van de bol? Aantal hoekpunten $n$ van de veelhoek?
+\end{enumerate}
+
+\section*{Deadline en wat in te dienen?}
+
+Er hoeft geen rapport geschreven te worden van deze eerste opdracht, maar je dient een \emph{mijlpaal} te verdienen bij \'e\'en van de assistenten, waar je je resultaten van de opdracht toont en demonstreert. Let hierbij op het duidelijk weergeven en presenteren van je resultaten, het oplijsten van je besluiten, enzovoort. \textbf{Deze mijlpaal moet TEN LAATSTE gehaald worden gedurende de sessies in de week van 3-7 oktober.}
+
+
+\end{document}\grid

@@ -1,0 +1,114 @@
+@font-face {
+    font-family: light;
+    src: url(../website/fonts/FiraSans-Light.ttf);
+}
+
+@font-face {
+    font-family: normal;
+    src: url(../website/fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(../website/fonts/FiraSans-Bold.ttf);
+}
+
+html {
+    margin: 0px;
+    font-size: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: light;
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+/******************************************************************************
+ * Styling for the banner
+ *****************************************************************************/
+
+#banner {
+    text-align: center;
+    padding: 16px 0px;
+}
+
+#banner > h1 {
+    font-family: bold;
+    font-size: 48px;
+    margin: 8px;
+}
+
+#banner > h2 {
+    font-family: light;
+    font-size: 32px;
+    margin: 8px;
+}
+
+/******************************************************************************
+ * Styling for the navigation
+ *****************************************************************************/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3F51B5;
+}
+
+.navigation-item {
+    padding: 24px 48px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/******************************************************************************
+ * Styling for groups
+ *****************************************************************************/
+
+.group {
+    max-width: 1024px;
+    margin: 64px auto;
+}
+
+.group > header {
+    text-align: left;
+}
+
+.group > header > h3 {
+    font-size: 40px;
+    font-family: bold;
+    margin: 16px 0px;
+}
+
+.group-item {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #303F9F;
+    color:white;
+}
+
+.group-item > header {
+    margin: 0;
+    padding: 0;
+}
+
+.group-item  > header > h4 {
+    font-size: 24px;
+    font-family: bold;
+    margin: 16px 0px;
+}
+
+.group-item > dl > dt {
+    font-family: bold;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/******************************************************************************
+ * Styling for contacts
