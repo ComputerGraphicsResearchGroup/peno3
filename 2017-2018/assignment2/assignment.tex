@@ -1,0 +1,79 @@
+\documentclass[10pt,a4paper]{article}
+
+% package declarations
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{parskip}
+\usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage[dutch]{babel}
+
+% document metadata
+\title{Probleemoplossen en Ontwerpen 3: Computerwetenschappen}
+\author{Philip Dutr\'e \and Karl Meerbergen}
+\date{3 oktober 2016}
+
+\begin{document}
+
+% custom title (in order to fit everything on one page)
+\begin{flushright}
+	Computerwetenschappen 2017\textemdash 2018\\[1cm]
+\end{flushright}
+\begin{center}%
+	\begin{huge}
+		\textbf{Probleemoplossen en Ontwerpen 3:}
+	\end{huge}\\[0.25cm]
+	\begin{huge}
+		\textbf{\textemdash Opgave 2\textemdash}
+	\end{huge}\\[0.75cm]
+	\begin{large}
+	Philip Dutr\'e\hspace{1cm}Karl Meerbergen
+	\end{large}\\[0.75cm]
+\end{center}
+
+De sectie \emph{opdracht}, zoals hieronder weergegeven, is wat we van jou verwachten. Het lijst een aantal experimenten en programmeeroefeningen op die je zelf, \emph{individueel}, moet uitvoeren.
+
+Het gedeelte \emph{onderzoeksvragen} zet je op weg om zelf de informatie op te zoeken (bibliotheek, online, ...) die je nodig zal hebben voor het uitwerken van de opdracht en geeft tevens belangrijke hints over hoe je je bevindingen kan structureren en voorstellen.
+
+\section*{Opdracht:}
+
+Onderzoek de invloed van de verschillende puntensets op de foutencurves van de Monte Carlo schatter. Implementeer hiervoor de volgende technieken om puntensets te genereren: (i) uniforme bemonstering, (ii) gestratificeerde bemonstering en (iii) Halton sequenties.
+
+Gebruik Monte Carlo integratie met bovenstaande puntensets om de volgende integratieproblemen op te lossen:
+\begin{enumerate}
+	\item
+	Evalueer de 1-dimensionale functie:
+		\begin{equation}
+			\int_0^\pi \cos\left(ax\right)^n\mathrm{d}x
+			\label{eq:cosn}
+		\end{equation}
+	met behulp van Monte Carlo integratie. Onderzoek voor deze functie ook de invloed van de parameters $a$ en $n$.
+	
+	\item 
+	Visualiseer de 2-dimensionale functie:
+	\begin{equation}
+		L\left(x,y\right) = \frac{1}{2}\left(1 + \cos\left(x^2+y^2\right)\right)
+	\end{equation}
+	over het interval \(\left[0,48\right]^2\) als een afbeelding met een resolutie van \(512 \times 512\) pixels. Gebruik hiervoor een assenstelsel waarbij de oorsprong in de hoek linksonder ligt, de $x$-as naar rechts wijst en de $y$-as omhoog wijst.
+	
+	De afbeelding die je moet bekomen toont voor elke pixel de gemiddelde waarde die de functie \(L\left(x,y\right)\) aanneemt in het domein van de pixel.
+\end{enumerate}
+
+Is er een verschil tussen hit-or-mis bemonstering en rechtstreekse bemonstering in het domein?
+
+\section*{Onderzoeksvragen:}
+\begin{enumerate}
+	\item Wat is de analytische formule om de integraal van vergelijking~\eqref{eq:cosn} te berekenen?
+	\item Hoe kan de functiewaardes van \(L\left(x,y\right)\) mappen naar een kleur voor een afbeelding?
+	\item Hoe zou je de kwaliteit van een puntenset kunnen karakteriseren (hint: zoek op het internet naar \textit{discrepantie})
+	\item Welke karakteristieken zijn voornamelijk van belang om een functie goed te kunnen evalueren met Monte Carlo integratie (Variaties in frequentie? Variaties in amplitude? Andere?)
+\end{enumerate}
+\section*{Deadline en wat in te dienen?}
+
+Schrijf een rapport met je bevindingen en stuur deze door naar \textcolor{blue}{niels.billen@cs.kuleuven.be}. Let hierbij
+op het duidelijk weergeven en presenteren van je resultaten, het oplijsten van je besluiten, enzovoort.
+\textbf{De deadline voor dit verslag ligt op het einde van de sessie op maandag 16 oktober voor groep A en dinsdag 17 oktober voor groep B.}
+
+\end{document}\grid
